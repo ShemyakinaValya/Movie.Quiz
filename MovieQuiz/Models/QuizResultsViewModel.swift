@@ -3,7 +3,7 @@
 //  MovieQuiz
 //
 struct QuizResultsViewModel {
-    let title: String
-    let text: String
-    let buttonText: String
+    var title: String
+    var text: String
+    var buttonText: String
 }
