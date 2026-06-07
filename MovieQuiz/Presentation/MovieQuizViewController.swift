@@ -86,14 +86,14 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate {
         
     private func showNextQuestionOrResults() {
         if currentQuestionIndex == questionsAmount - 1 {
+            statisticService.store(correct: correctAnswers, total: questionsAmount)
             let bestGame = statisticService.bestGame
-            let text = "Ваш результат: \(correctAnswers)/10\n Количество сыгранных квизов: \(statisticService.gamesCount)\n Рекорд: \(bestGame.correct)/\(bestGame.total) (\(bestGame.date.dateTimeString))\n Средняя точность: \(String(format: "%.2f", statisticService.totalAccuracy))%"
+            let text = "Ваш результат: \(correctAnswers)/10\nКоличество сыгранных квизов: \(statisticService.gamesCount)\nРекорд: \(bestGame.correct)/\(bestGame.total) (\(bestGame.date.dateTimeString))\nСредняя точность: \(String(format: "%.2f", statisticService.totalAccuracy))%"
             let viewModel = QuizResultsViewModel(
                 title: "Этот раунд окончен!",
                 text: text,
                 buttonText: "Сыграть еще раз")
             show(quiz: viewModel)
-            statisticService.store(correct: correctAnswers, total: questionsAmount)
         } else {
             currentQuestionIndex += 1
             questionFactory?.requestNextQuestion.self()

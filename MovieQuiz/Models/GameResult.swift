@@ -5,6 +5,6 @@ struct GameResult {
     let total: Int
     let date: Date
     func isBetterThan (_ another: GameResult) -> Bool{
-        correct > another.correct
+        correct >= another.correct
     }
 }
