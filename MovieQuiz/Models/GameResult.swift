@@ -1,10 +1,10 @@
 import Foundation
 
-struct GameResult {
+struct GameResult: Codable {
     let correct: Int
     let total: Int
     let date: Date
-    func isBetterThan (_ another: GameResult) -> Bool{
+    func isBetterThan(_ another: GameResult) -> Bool {
         correct >= another.correct
     }
 }

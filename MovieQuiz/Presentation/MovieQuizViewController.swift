@@ -94,5 +94,6 @@ final class MovieQuizViewController: UIViewController, MovieQuizViewControllerPr
         }
         
         alert.addAction(action)
+        present(alert, animated: true)
     }
 }

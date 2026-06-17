@@ -134,12 +134,12 @@
 		611342392B701CF6003FC2A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9E2621152FD9FCC80081A847 /* MostPopularMovies.swift */,
-				9E26210F2FD20AEB0081A847 /* GameResult.swift */,
-				9E2620F92FCF63090081A847 /* AlertModel.swift */,
-				9E19176B2FBCF520009E3FAE /* QuizQuestion.swift */,
-				9E1917692FBCF4D8009E3FAE /* QuizResultsViewModel.swift */,
 				9E1917672FBCF41F009E3FAE /* QuizStepViewModel.swift */,
+				9E1917692FBCF4D8009E3FAE /* QuizResultsViewModel.swift */,
+				9E19176B2FBCF520009E3FAE /* QuizQuestion.swift */,
+				9E2620F92FCF63090081A847 /* AlertModel.swift */,
+				9E26210F2FD20AEB0081A847 /* GameResult.swift */,
+				9E2621152FD9FCC80081A847 /* MostPopularMovies.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";

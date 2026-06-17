@@ -1,7 +1,5 @@
-//
-//  QuizResultsViewModel.swift
-//  MovieQuiz
-//
+import Foundation
+
 struct QuizResultsViewModel {
     var title: String
     var text: String
